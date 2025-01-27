@@ -6,6 +6,7 @@ Principal: Your goal as a highschool student is to manage all aspects of your li
 Principal: These include your health, social life, academics, and mental health.
 Principal: Thats pretty much all I know after all I'm not a teacher. Here lets head to the cafeteria and check out all the Activities!
 Principal: What do you want to do next?
-- Start again => help
-- Continue => END
+- Continue to Cafeteria => END
+- Say that one more time => help
 => END
+

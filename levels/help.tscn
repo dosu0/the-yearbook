@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://i0lj1go5eg0y"]
+[gd_scene load_steps=13 format=4 uid="uid://i0lj1go5eg0y"]
 
 [ext_resource type="Script" path="res://scripts/help_scene.gd" id="1_yychq"]
 [ext_resource type="PackedScene" uid="uid://bw708f81hasfj" path="res://scenes/stats.tscn" id="2_3n4l3"]
@@ -7,7 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://uqa6sbdq258i" path="res://assets/sprites/interior/1_Generic_16x16.png" id="4_w855v"]
 [ext_resource type="PackedScene" uid="uid://c2s4mm2a6qn3n" path="res://scenes/player.tscn" id="5_4lcar"]
 [ext_resource type="PackedScene" uid="uid://6l1vnpb2ds82" path="res://scenes/npc.tscn" id="6_f7nvf"]
-[ext_resource type="PackedScene" uid="uid://ca4pat7gv1ayd" path="res://scenes/down_arrow.tscn" id="7_16vaj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3pxmr"]
 texture = ExtResource("3_bu33l")
@@ -1454,6 +1453,3 @@ position = Vector2(5, 39)
 
 [node name="Principal" parent="." instance=ExtResource("6_f7nvf")]
 position = Vector2(8, -3)
-
-[node name="DownArrow" parent="." instance=ExtResource("7_16vaj")]
-position = Vector2(8, -17)
