@@ -1,0 +1,163 @@
+[gd_scene load_steps=8 format=3 uid="uid://bw708f81hasfj"]
+
+[ext_resource type="FontFile" uid="uid://cd47d1ng5ylgm" path="res://assets/fonts/PixelOperator8.ttf" id="1_nxq1q"]
+
+[sub_resource type="GDScript" id="GDScript_d368p"]
+script/source = "extends VBoxContainer
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hynre"]
+bg_color = Color(0.631373, 0.909804, 0.686275, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0vn1k"]
+bg_color = Color(0.883264, 0, 0.0706631, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6fxi3"]
+bg_color = Color(0, 0.632232, 0.969908, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x2jop"]
+bg_color = Color(0.894036, 0, 0.3018, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6qbpo"]
+bg_color = Color(0.92549, 0.686275, 0.0588235, 1)
+
+[node name="Stats" type="VBoxContainer"]
+offset_left = 31.0
+offset_top = 19.0
+offset_right = 1279.0
+offset_bottom = 571.0
+theme_override_constants/separation = 10
+script = SubResource("GDScript_d368p")
+
+[node name="Health" type="ProgressBar" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 7
+tooltip_text = "health"
+theme_override_fonts/font = ExtResource("1_nxq1q")
+theme_override_font_sizes/font_size = 8
+theme_override_styles/fill = SubResource("StyleBoxFlat_hynre")
+max_value = 10.0
+value = 5.0
+show_percentage = false
+
+[node name="Label" type="Label" parent="Health"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_right = 78.0
+offset_bottom = 11.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_nxq1q")
+theme_override_font_sizes/font_size = 32
+text = "health"
+vertical_alignment = 1
+
+[node name="Academics" type="ProgressBar" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 7
+theme_override_fonts/font = ExtResource("1_nxq1q")
+theme_override_font_sizes/font_size = 8
+theme_override_styles/fill = SubResource("StyleBoxFlat_0vn1k")
+max_value = 10.0
+value = 7.0
+show_percentage = false
+
+[node name="Label" type="Label" parent="Academics"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_right = 126.0
+offset_bottom = 11.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_nxq1q")
+theme_override_font_sizes/font_size = 32
+text = "academics
+"
+vertical_alignment = 1
+
+[node name="Social" type="ProgressBar" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 7
+tooltip_text = "social"
+theme_override_fonts/font = ExtResource("1_nxq1q")
+theme_override_font_sizes/font_size = 8
+theme_override_styles/fill = SubResource("StyleBoxFlat_6fxi3")
+max_value = 10.0
+value = 6.0
+show_percentage = false
+
+[node name="Label" type="Label" parent="Social"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_right = 76.0
+offset_bottom = 11.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_nxq1q")
+theme_override_font_sizes/font_size = 32
+text = "social
+"
+vertical_alignment = 1
+
+[node name="Mental" type="ProgressBar" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 7
+theme_override_fonts/font = ExtResource("1_nxq1q")
+theme_override_font_sizes/font_size = 8
+theme_override_styles/fill = SubResource("StyleBoxFlat_x2jop")
+max_value = 10.0
+value = 3.0
+show_percentage = false
+
+[node name="Label" type="Label" parent="Mental"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_right = 82.0
+offset_bottom = 11.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_nxq1q")
+theme_override_font_sizes/font_size = 32
+text = "mental"
+vertical_alignment = 1
+
+[node name="Money" type="ProgressBar" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 7
+theme_override_fonts/font = ExtResource("1_nxq1q")
+theme_override_font_sizes/font_size = 8
+theme_override_styles/fill = SubResource("StyleBoxFlat_6qbpo")
+max_value = 10.0
+value = 8.0
+show_percentage = false
+
+[node name="Label" type="Label" parent="Money"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_right = 42.0
+offset_bottom = 11.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_nxq1q")
+theme_override_font_sizes/font_size = 32
+text = "$$$"
+vertical_alignment = 1
