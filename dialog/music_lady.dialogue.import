@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://gn7v8ya6totm"
+path="res://.godot/imported/music_lady.dialogue-ba7141bc6f36ecc8f0e3534642aea4f1.tres"
+
+[deps]
+
+source_file="res://dialog/music_lady.dialogue"
+dest_files=["res://.godot/imported/music_lady.dialogue-ba7141bc6f36ecc8f0e3534642aea4f1.tres"]
+
+[params]
+
+defaults=true

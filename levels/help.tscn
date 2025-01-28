@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://i0lj1go5eg0y"]
+[gd_scene load_steps=22 format=4 uid="uid://i0lj1go5eg0y"]
 
 [ext_resource type="Script" path="res://scripts/help_scene.gd" id="1_yychq"]
 [ext_resource type="PackedScene" uid="uid://bw708f81hasfj" path="res://scenes/stats.tscn" id="2_3n4l3"]
@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://uqa6sbdq258i" path="res://assets/sprites/interior/1_Generic_16x16.png" id="4_w855v"]
 [ext_resource type="PackedScene" uid="uid://c2s4mm2a6qn3n" path="res://scenes/player.tscn" id="5_4lcar"]
 [ext_resource type="PackedScene" uid="uid://6l1vnpb2ds82" path="res://scenes/npc.tscn" id="6_f7nvf"]
+[ext_resource type="Texture2D" uid="uid://btmahfb1yawtn" path="res://assets/sprites/characters/principal.png" id="8_bm0sc"]
+[ext_resource type="Resource" uid="uid://4mtftwrxuurf" path="res://dialog/help.dialogue" id="8_rxewy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3pxmr"]
 texture = ExtResource("3_bu33l")
@@ -1418,6 +1420,56 @@ texture = ExtResource("4_w855v")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_2xwpo")
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_m03ym"]
+atlas = ExtResource("8_bm0sc")
+region = Rect2(288, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2h2rd"]
+atlas = ExtResource("8_bm0sc")
+region = Rect2(304, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rdbda"]
+atlas = ExtResource("8_bm0sc")
+region = Rect2(320, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1eiju"]
+atlas = ExtResource("8_bm0sc")
+region = Rect2(336, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c6it8"]
+atlas = ExtResource("8_bm0sc")
+region = Rect2(352, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aun8y"]
+atlas = ExtResource("8_bm0sc")
+region = Rect2(368, 32, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i3nbt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m03ym")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2h2rd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rdbda")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1eiju")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c6it8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aun8y")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}]
+
 [node name="Help" type="Node2D"]
 script = ExtResource("1_yychq")
 
@@ -1453,3 +1505,9 @@ position = Vector2(5, 39)
 
 [node name="Principal" parent="." instance=ExtResource("6_f7nvf")]
 position = Vector2(8, -3)
+dialog = ExtResource("8_rxewy")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Principal"]
+sprite_frames = SubResource("SpriteFrames_i3nbt")
+animation = &"idle"
+autoplay = "idle"

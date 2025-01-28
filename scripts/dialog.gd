@@ -1,6 +1,5 @@
 extends CanvasLayer
 
-
 const DIALOGUE_PITCHES = {
 	Principal = 0.8,
 	Player = 1

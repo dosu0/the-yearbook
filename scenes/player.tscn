@@ -383,8 +383,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xwdjp"]
-radius = 6.0
-height = 20.0
+radius = 7.0
+height = 14.0
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_layer = 2
@@ -395,5 +395,5 @@ sprite_frames = SubResource("SpriteFrames_gerya")
 animation = &"idle_back"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 6)
+position = Vector2(0, 10)
 shape = SubResource("CapsuleShape2D_xwdjp")

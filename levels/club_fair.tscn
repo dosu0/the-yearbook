@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://bqc2t85awyjp7"]
+[gd_scene load_steps=27 format=4 uid="uid://bqc2t85awyjp7"]
 
 [ext_resource type="PackedScene" uid="uid://bw708f81hasfj" path="res://scenes/stats.tscn" id="2_prcfj"]
 [ext_resource type="Texture2D" uid="uid://jcxo6qb34oyo" path="res://assets/sprites/scenes/cafeteria.png" id="3_tn7hj"]
@@ -7,6 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://bpyalk6ynuhmc" path="res://assets/sprites/interior/5_Classroom_and_library_16x16.png" id="5_wb8bk"]
 [ext_resource type="Texture2D" uid="uid://cokvicr1sitgd" path="res://assets/sprites/interior/6_Music_and_sport_16x16.png" id="6_030im"]
 [ext_resource type="PackedScene" uid="uid://c2s4mm2a6qn3n" path="res://scenes/player.tscn" id="6_vxdke"]
+[ext_resource type="PackedScene" uid="uid://6l1vnpb2ds82" path="res://scenes/npc.tscn" id="7_caph6"]
+[ext_resource type="Texture2D" uid="uid://i11md4vkrh02" path="res://assets/sprites/characters/music_lady.png" id="9_lg2if"]
+[ext_resource type="Resource" uid="uid://gn7v8ya6totm" path="res://dialog/music_lady.dialogue" id="9_vligv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3pxmr"]
 texture = ExtResource("3_tn7hj")
@@ -7482,6 +7485,56 @@ sources/0 = SubResource("TileSetAtlasSource_qb85n")
 sources/1 = SubResource("TileSetAtlasSource_dfsei")
 sources/2 = SubResource("TileSetAtlasSource_hbaoy")
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_cs43j"]
+atlas = ExtResource("9_lg2if")
+region = Rect2(288, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sxeb2"]
+atlas = ExtResource("9_lg2if")
+region = Rect2(304, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1pk4k"]
+atlas = ExtResource("9_lg2if")
+region = Rect2(320, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vg5b1"]
+atlas = ExtResource("9_lg2if")
+region = Rect2(336, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_knp8q"]
+atlas = ExtResource("9_lg2if")
+region = Rect2(352, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lffj4"]
+atlas = ExtResource("9_lg2if")
+region = Rect2(368, 32, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_beikx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cs43j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sxeb2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1pk4k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vg5b1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_knp8q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lffj4")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
 [node name="ClubFair" type="Node2D"]
 
 [node name="HUD" type="CanvasLayer" parent="."]
@@ -7517,3 +7570,12 @@ zoom = Vector2(8, 8)
 [node name="Player" parent="." instance=ExtResource("6_vxdke")]
 unique_name_in_owner = true
 position = Vector2(5, 39)
+
+[node name="NPC3" parent="." instance=ExtResource("7_caph6")]
+position = Vector2(7, -49)
+dialog = ExtResource("9_vligv")
+
+[node name="MusicLady" type="AnimatedSprite2D" parent="NPC3"]
+sprite_frames = SubResource("SpriteFrames_beikx")
+animation = &"idle"
+autoplay = "idle"

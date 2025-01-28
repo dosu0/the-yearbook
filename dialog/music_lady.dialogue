@@ -1,0 +1,11 @@
+~ start
+Ms. Music Teacher: [[Hi|Hello|Howdy]], I'm the music teacher.
+Ms. Music Teacher: Do you want to join band, orchestra or chorus?
+- Band
+	Ms. Music Teacher: Welcome to band!
+- Orchestra
+	Ms. Music Teacher: Welcome to Orchestra!
+- Chorus
+	Ms. Music Teacher: Welcome to chorus!
+- I'm just looking around => END
+=> END

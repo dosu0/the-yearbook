@@ -72,7 +72,7 @@ interact={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://dialog/help.dialogue")
+locale/translations_pot_files=PackedStringArray("res://dialog/help.dialogue", "res://dialog/music_lady.dialogue", "res://characters/dialog/help.dialogue", "res://characters/dialog/music_lady.dialogue", "res://characters/characters/dialog/help.dialogue", "res://characters/characters/dialog/music_lady.dialogue")
 
 [layer_names]
 

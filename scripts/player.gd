@@ -4,11 +4,6 @@ extends CharacterBody2D
 
 const SPEED = 75.0
 
-var health = 10
-var academics = 10
-var social = 2
-var mental = 4
-var money = 2
 var face_direction := "front"
 var animation_to_play := "front_idle"
 

@@ -1,70 +1,14 @@
-[gd_scene load_steps=12 format=3 uid="uid://6l1vnpb2ds82"]
+[gd_scene load_steps=4 format=3 uid="uid://6l1vnpb2ds82"]
 
 [ext_resource type="Script" path="res://scripts/npc.gd" id="1_5gtvu"]
-[ext_resource type="Texture2D" uid="uid://btmahfb1yawtn" path="res://assets/sprites/characters/principal.png" id="1_ejm4x"]
 [ext_resource type="PackedScene" uid="uid://dgppev51jc1wy" path="res://scenes/interaction_area.tscn" id="2_tvwlo"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_m03ym"]
-atlas = ExtResource("1_ejm4x")
-region = Rect2(288, 32, 16, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2h2rd"]
-atlas = ExtResource("1_ejm4x")
-region = Rect2(304, 32, 16, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_rdbda"]
-atlas = ExtResource("1_ejm4x")
-region = Rect2(320, 32, 16, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1eiju"]
-atlas = ExtResource("1_ejm4x")
-region = Rect2(336, 32, 16, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_c6it8"]
-atlas = ExtResource("1_ejm4x")
-region = Rect2(352, 32, 16, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_aun8y"]
-atlas = ExtResource("1_ejm4x")
-region = Rect2(368, 32, 16, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_uy78x"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_m03ym")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2h2rd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_rdbda")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1eiju")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_c6it8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_aun8y")
-}],
-"loop": true,
-"name": &"idle",
-"speed": 6.0
-}]
-
 [sub_resource type="CircleShape2D" id="CircleShape2D_ql86b"]
-radius = 47.0106
+radius = 64.0
 
 [node name="NPC" type="Node2D"]
 position = Vector2(2, 0)
 script = ExtResource("1_5gtvu")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_uy78x")
-animation = &"idle"
-autoplay = "idle"
 
 [node name="InteractionArea" parent="." instance=ExtResource("2_tvwlo")]
 action_name = "talk"
