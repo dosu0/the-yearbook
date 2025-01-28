@@ -1,17 +1,17 @@
 [gd_scene load_steps=22 format=4 uid="uid://i0lj1go5eg0y"]
 
-[ext_resource type="Script" path="res://scripts/help_scene.gd" id="1_yychq"]
-[ext_resource type="PackedScene" uid="uid://bw708f81hasfj" path="res://scenes/stats.tscn" id="2_3n4l3"]
-[ext_resource type="Texture2D" uid="uid://jyslkfbmmhba" path="res://assets/sprites/scenes/office.png" id="3_2nkob"]
-[ext_resource type="Texture2D" uid="uid://jcxo6qb34oyo" path="res://assets/sprites/scenes/cafeteria.png" id="3_bu33l"]
-[ext_resource type="Texture2D" uid="uid://uqa6sbdq258i" path="res://assets/sprites/interior/1_Generic_16x16.png" id="4_w855v"]
-[ext_resource type="PackedScene" uid="uid://c2s4mm2a6qn3n" path="res://scenes/player.tscn" id="5_4lcar"]
-[ext_resource type="PackedScene" uid="uid://6l1vnpb2ds82" path="res://scenes/npc.tscn" id="6_f7nvf"]
-[ext_resource type="Texture2D" uid="uid://btmahfb1yawtn" path="res://assets/sprites/characters/principal.png" id="8_bm0sc"]
-[ext_resource type="Resource" uid="uid://4mtftwrxuurf" path="res://dialog/help.dialogue" id="8_rxewy"]
+[ext_resource type="Script" path="res://scenes/tutorial/tutorial.gd" id="1_yp66w"]
+[ext_resource type="PackedScene" uid="uid://bw708f81hasfj" path="res://ui/stats.tscn" id="2_6ohoj"]
+[ext_resource type="Texture2D" uid="uid://jcxo6qb34oyo" path="res://assets/sprites/scenes/cafeteria.png" id="3_upw3b"]
+[ext_resource type="Texture2D" uid="uid://jyslkfbmmhba" path="res://assets/sprites/scenes/office.png" id="4_ustgx"]
+[ext_resource type="Texture2D" uid="uid://uqa6sbdq258i" path="res://assets/sprites/interior/1_Generic_16x16.png" id="5_f7uaj"]
+[ext_resource type="PackedScene" uid="uid://c2s4mm2a6qn3n" path="res://entities/player/player.tscn" id="6_bmd0v"]
+[ext_resource type="PackedScene" uid="uid://6l1vnpb2ds82" path="res://entities/npc/npc.tscn" id="7_d7fkr"]
+[ext_resource type="Resource" uid="uid://4mtftwrxuurf" path="res://dialog/help.dialogue" id="8_c2ynm"]
+[ext_resource type="Texture2D" uid="uid://btmahfb1yawtn" path="res://assets/sprites/characters/principal.png" id="9_et0k8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3pxmr"]
-texture = ExtResource("3_bu33l")
+texture = ExtResource("3_upw3b")
 1:0/0 = 0
 2:0/0 = 0
 3:0/0 = 0
@@ -168,7 +168,7 @@ texture = ExtResource("3_bu33l")
 15:9/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_34xvs"]
-texture = ExtResource("3_2nkob")
+texture = ExtResource("4_ustgx")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -319,7 +319,7 @@ sources/1 = SubResource("TileSetAtlasSource_34xvs")
 sources/0 = SubResource("TileSetAtlasSource_3pxmr")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2xwpo"]
-texture = ExtResource("4_w855v")
+texture = ExtResource("5_f7uaj")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1421,27 +1421,27 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_2xwpo")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m03ym"]
-atlas = ExtResource("8_bm0sc")
+atlas = ExtResource("9_et0k8")
 region = Rect2(288, 32, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2h2rd"]
-atlas = ExtResource("8_bm0sc")
+atlas = ExtResource("9_et0k8")
 region = Rect2(304, 32, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rdbda"]
-atlas = ExtResource("8_bm0sc")
+atlas = ExtResource("9_et0k8")
 region = Rect2(320, 32, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1eiju"]
-atlas = ExtResource("8_bm0sc")
+atlas = ExtResource("9_et0k8")
 region = Rect2(336, 32, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_c6it8"]
-atlas = ExtResource("8_bm0sc")
+atlas = ExtResource("9_et0k8")
 region = Rect2(352, 32, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_aun8y"]
-atlas = ExtResource("8_bm0sc")
+atlas = ExtResource("9_et0k8")
 region = Rect2(368, 32, 16, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_i3nbt"]
@@ -1471,11 +1471,11 @@ animations = [{
 }]
 
 [node name="Help" type="Node2D"]
-script = ExtResource("1_yychq")
+script = ExtResource("1_yp66w")
 
 [node name="HUD" type="CanvasLayer" parent="."]
 
-[node name="Stats" parent="HUD" instance=ExtResource("2_3n4l3")]
+[node name="Stats" parent="HUD" instance=ExtResource("2_6ohoj")]
 unique_name_in_owner = true
 z_index = 1
 anchors_preset = -1
@@ -1499,13 +1499,13 @@ tile_set = SubResource("TileSet_00sxi")
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(8, 8)
 
-[node name="Player" parent="." instance=ExtResource("5_4lcar")]
+[node name="Player" parent="." instance=ExtResource("6_bmd0v")]
 unique_name_in_owner = true
 position = Vector2(5, 39)
 
-[node name="Principal" parent="." instance=ExtResource("6_f7nvf")]
+[node name="Principal" parent="." instance=ExtResource("7_d7fkr")]
 position = Vector2(8, -3)
-dialog = ExtResource("8_rxewy")
+dialog = ExtResource("8_c2ynm")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Principal"]
 sprite_frames = SubResource("SpriteFrames_i3nbt")

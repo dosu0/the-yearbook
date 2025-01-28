@@ -1,14 +1,14 @@
 [gd_scene load_steps=9 format=3 uid="uid://ch0v5vyyhbdfv"]
 
-[ext_resource type="Texture2D" uid="uid://c0nm0wnbwfjw0" path="res://assets/sprites/title_screen_bg.png" id="1_smxnv"]
-[ext_resource type="FontFile" uid="uid://c0m4nf665wsf" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="1_vg208"]
-[ext_resource type="FontFile" uid="uid://cd47d1ng5ylgm" path="res://assets/fonts/PixelOperator8.ttf" id="2_8aa4u"]
-[ext_resource type="Script" path="res://scripts/play_button.gd" id="3_hiith"]
-[ext_resource type="Script" path="res://scripts/help.gd" id="5_7f5gl"]
-[ext_resource type="Script" path="res://scripts/quit.gd" id="6_xuxwf"]
+[ext_resource type="Texture2D" uid="uid://c0nm0wnbwfjw0" path="res://assets/sprites/title_screen_bg.png" id="1_l0oct"]
+[ext_resource type="FontFile" uid="uid://c0m4nf665wsf" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="2_t04f3"]
+[ext_resource type="FontFile" uid="uid://cd47d1ng5ylgm" path="res://assets/fonts/PixelOperator8.ttf" id="3_nueeg"]
+[ext_resource type="Script" path="res://scenes/title_screen/play_button.gd" id="4_feyhv"]
+[ext_resource type="Script" path="res://scenes/title_screen/help_button.gd" id="5_367jm"]
+[ext_resource type="Script" path="res://scenes/title_screen/quit_button.gd" id="6_8tdq8"]
 
 [sub_resource type="Theme" id="Theme_bmngr"]
-default_font = ExtResource("2_8aa4u")
+default_font = ExtResource("3_nueeg")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y11gg"]
 region = Rect2(655, 102, 32, 32)
@@ -21,7 +21,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture = ExtResource("1_smxnv")
+texture = ExtResource("1_l0oct")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -43,7 +43,7 @@ theme_override_constants/separation = 0
 layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_outline_size = 64
-theme_override_fonts/font = ExtResource("1_vg208")
+theme_override_fonts/font = ExtResource("2_t04f3")
 theme_override_font_sizes/font_size = 256
 text = "The Yearbook"
 horizontal_alignment = 1
@@ -65,26 +65,26 @@ theme_override_constants/separation = 30
 layout_mode = 2
 size_flags_vertical = 3
 theme = SubResource("Theme_bmngr")
-theme_override_fonts/font = ExtResource("1_vg208")
+theme_override_fonts/font = ExtResource("2_t04f3")
 theme_override_font_sizes/font_size = 48
 text = "Play"
-script = ExtResource("3_hiith")
+script = ExtResource("4_feyhv")
 
 [node name="Help" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer/MenuOptions"]
 layout_mode = 2
 size_flags_vertical = 3
 theme = SubResource("Theme_bmngr")
-theme_override_fonts/font = ExtResource("1_vg208")
+theme_override_fonts/font = ExtResource("2_t04f3")
 theme_override_font_sizes/font_size = 48
 text = "Help
 "
-script = ExtResource("5_7f5gl")
+script = ExtResource("5_367jm")
 
 [node name="Save" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer/MenuOptions"]
 layout_mode = 2
 size_flags_vertical = 3
 theme = SubResource("Theme_bmngr")
-theme_override_fonts/font = ExtResource("1_vg208")
+theme_override_fonts/font = ExtResource("2_t04f3")
 theme_override_font_sizes/font_size = 48
 disabled = true
 text = "Save / Load"
@@ -93,11 +93,11 @@ text = "Save / Load"
 layout_mode = 2
 size_flags_vertical = 3
 theme = SubResource("Theme_bmngr")
-theme_override_fonts/font = ExtResource("1_vg208")
+theme_override_fonts/font = ExtResource("2_t04f3")
 theme_override_font_sizes/font_size = 48
 text = "Quit
 "
-script = ExtResource("6_xuxwf")
+script = ExtResource("6_8tdq8")
 
 [node name="TextureButton" type="TextureButton" parent="MarginContainer"]
 layout_mode = 2
@@ -119,7 +119,7 @@ offset_bottom = -19.5
 grow_horizontal = 2
 grow_vertical = 0
 size_flags_vertical = 8
-theme_override_fonts/font = ExtResource("1_vg208")
+theme_override_fonts/font = ExtResource("2_t04f3")
 theme_override_font_sizes/font_size = 24
 text = "by Robbie, Minchan, and Samuel"
 horizontal_alignment = 1

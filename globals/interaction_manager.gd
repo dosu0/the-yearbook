@@ -9,7 +9,7 @@ var player: CharacterBody2D:
 
 @onready var arrow: AnimatedSprite2D = $Arrow
 var active_areas: Array[Area2D] = []
-var can_interact = true
+var can_interact: bool = true
 
 func register_area(area: InteractionArea):
 	active_areas.push_back(area)
@@ -18,7 +18,6 @@ func unregister_area(area: InteractionArea):
 	var index = active_areas.find(area)
 	if index != -1:
 		active_areas.remove_at(index)
-		print(active_areas)
 
 func _process(_delta) -> void:
 	if (not active_areas.is_empty()) and can_interact and GameManager.is_playing:

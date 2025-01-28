@@ -11,19 +11,19 @@ config_version=5
 [application]
 
 config/name="The Yearbook"
-run/main_scene="res://scenes/title_screen.tscn"
+run/main_scene="res://scenes/title_screen/title_screen.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
-InteractionManager="*res://scenes/interaction_manager.tscn"
-GameManager="*res://scripts/game_manager.gd"
+InteractionManager="*res://globals/interaction_manager.tscn"
+GameManager="*res://globals/game_manager.gd"
 
 [dialogue_manager]
 
-general/balloon_path="res://scenes/dialog.tscn"
+general/balloon_path="res://ui/dialog/dialog.tscn"
 
 [display]
 
