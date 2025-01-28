@@ -12,11 +12,9 @@ var active_areas: Array[Area2D] = []
 var can_interact = true
 
 func register_area(area: InteractionArea):
-	print("area registered")
 	active_areas.push_back(area)
 
 func unregister_area(area: InteractionArea):
-	print("area unregistered")
 	var index = active_areas.find(area)
 	if index != -1:
 		active_areas.remove_at(index)

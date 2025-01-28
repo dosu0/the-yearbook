@@ -47,8 +47,7 @@ var dialogue_line: DialogueLine:
 
 		character_label.visible = not dialogue_line.character.is_empty()
 		character_label.text = tr(dialogue_line.character, "dialogue")
-		character_portrait.texture = load("res://assets/sprites/portraits/%s%s.png" % [dialogue_line.character.to_lower(), file_suffix])
-
+		character_portrait.texture = load("res://assets/sprites/portraits/%s%s.png" % [dialogue_line.character.to_snake_case(), file_suffix])
 		dialogue_label.modulate.a = 0
 		dialogue_label.custom_minimum_size.x = dialogue_label.get_parent().size.x - 1
 		dialogue_label.dialogue_line = dialogue_line

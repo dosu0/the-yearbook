@@ -1,5 +1,8 @@
 ~ start
-Principal: [[Hi|Hello]], Welcome to freshman Orientation! Let me help you around! Press SPACE to continue!
+Principal: Would you like to go through a quick tutorial?
+- Yes, please!
+- No, thank you. => END
+Principal: [[Hi|Hello]], Welcome to freshman Orientation! Let me help you around!
 Principal: If you wanna walk around you can use the arrow keys or WASD.
 Principal: If you want to interact with someone go ahead and press SPACE!
 Principal: Your goal as a highschool student is to manage all aspects of your life.
