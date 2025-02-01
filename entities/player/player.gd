@@ -19,7 +19,9 @@ func _physics_process(_delta: float) -> void:
 		else:
 			face_direction = "front" if input_direction.y < 0 else "back"
 	
-	animation_to_play = ("walk" if velocity.length() > 0.0 else "idle") + "_" + face_direction
+	if animation_to_play != "sit_left" and animation_to_play != "sit_right":
+		animation_to_play = ("walk" if velocity.length() > 0.0 else "idle") + "_" + face_direction
+		
 	sprite.play(animation_to_play)
 	
 	# Move character, slide at collision

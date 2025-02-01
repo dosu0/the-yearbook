@@ -1,8 +1,10 @@
 extends CanvasLayer
 
 const DIALOGUE_PITCHES = {
-	Principal = 0.8,
-	Player = 1
+	"Principal": 0.8,
+	"Basketball Coach": 0.7,
+	"Music Teacher": 1.0,
+	"FBLA Officer": 0.9
 }
 
 @export var response_template: Node

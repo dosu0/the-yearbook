@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://sn08ksfvj1d1"
-path="res://.godot/imported/player.png-4508374c418cbfe7b79c5beffcb67188.ctex"
+uid="uid://d2j8xbmtjrqv0"
+path="res://.godot/imported/fbla_officer.png-0e3d06250e771190e94a715eb68dbfb7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/characters/player.png"
-dest_files=["res://.godot/imported/player.png-4508374c418cbfe7b79c5beffcb67188.ctex"]
+source_file="res://assets/sprites/characters/fbla_officer.png"
+dest_files=["res://.godot/imported/fbla_officer.png-0e3d06250e771190e94a715eb68dbfb7.ctex"]
 
 [params]
 

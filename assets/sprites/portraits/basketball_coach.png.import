@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://sn08ksfvj1d1"
-path="res://.godot/imported/player.png-4508374c418cbfe7b79c5beffcb67188.ctex"
+uid="uid://dhe26tq1tr8y4"
+path="res://.godot/imported/basketball_coach.png-de5e8c50b5221e612046e1d444cad79e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/characters/player.png"
-dest_files=["res://.godot/imported/player.png-4508374c418cbfe7b79c5beffcb67188.ctex"]
+source_file="res://assets/sprites/portraits/basketball_coach.png"
+dest_files=["res://.godot/imported/basketball_coach.png-de5e8c50b5221e612046e1d444cad79e.ctex"]
 
 [params]
 

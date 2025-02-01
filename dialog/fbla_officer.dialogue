@@ -1,0 +1,6 @@
+~ start
+FBLA Officer: [[Hi|Hello|Howdy]], would you like to join FBLA?
+- Yes! Sign me up!
+	FBLA Officer: Welcome to FBLA!
+- No, thank you.
+=> END

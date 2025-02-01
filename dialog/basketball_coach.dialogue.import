@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://bytna3we4fuqn"
+path="res://.godot/imported/basketball_coach.dialogue-17ca5cbb9b2390e4b1522a7208bae606.tres"
+
+[deps]
+
+source_file="res://dialog/basketball_coach.dialogue"
+dest_files=["res://.godot/imported/basketball_coach.dialogue-17ca5cbb9b2390e4b1522a7208bae606.tres"]
+
+[params]
+
+defaults=true

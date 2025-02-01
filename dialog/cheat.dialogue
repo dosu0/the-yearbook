@@ -1,0 +1,5 @@
+~ start
+Yourself: Should I cheat?
+- Yes, I need to pass this test! [color=green](+academics)[/color] [color=orange](70% success rate)[/color]
+- No, it's not worth it. [color=red](-academics)[/color]
+=> END

@@ -1470,7 +1470,7 @@ animations = [{
 "speed": 6.0
 }]
 
-[node name="Help" type="Node2D"]
+[node name="Tutorial" type="Node2D"]
 script = ExtResource("1_yp66w")
 
 [node name="HUD" type="CanvasLayer" parent="."]

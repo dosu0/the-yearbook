@@ -1,0 +1,8 @@
+~ start
+Basketball Coach: [[Hi|Hello|Howdy]], would you like to tryout for the basketball team?
+- Yes, sign me up!
+	Basketball Coach: Alright, tryouts are in a month!
+	Basketball Coach: Good Luck!
+- No, thanks. I'm just looking around.
+	Basketball Coach: [[No Worries|No Problem|All Good]]!
+=> END
