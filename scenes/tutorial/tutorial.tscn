@@ -1,7 +1,6 @@
-[gd_scene load_steps=22 format=4 uid="uid://i0lj1go5eg0y"]
+[gd_scene load_steps=21 format=4 uid="uid://i0lj1go5eg0y"]
 
 [ext_resource type="Script" path="res://scenes/tutorial/tutorial.gd" id="1_yp66w"]
-[ext_resource type="PackedScene" uid="uid://bw708f81hasfj" path="res://ui/stats.tscn" id="2_6ohoj"]
 [ext_resource type="Texture2D" uid="uid://jcxo6qb34oyo" path="res://assets/sprites/scenes/cafeteria.png" id="3_upw3b"]
 [ext_resource type="Texture2D" uid="uid://jyslkfbmmhba" path="res://assets/sprites/scenes/office.png" id="4_ustgx"]
 [ext_resource type="Texture2D" uid="uid://uqa6sbdq258i" path="res://assets/sprites/interior/1_Generic_16x16.png" id="5_f7uaj"]
@@ -1473,26 +1472,15 @@ animations = [{
 [node name="Tutorial" type="Node2D"]
 script = ExtResource("1_yp66w")
 
-[node name="HUD" type="CanvasLayer" parent="."]
-
-[node name="Stats" parent="HUD" instance=ExtResource("2_6ohoj")]
-unique_name_in_owner = true
-z_index = 1
-anchors_preset = -1
-anchor_right = 0.0972222
-anchor_bottom = 0.128086
-offset_left = 32.0
-offset_right = 320.0
-offset_bottom = 194.0
-metadata/_edit_use_anchors_ = true
-
 [node name="Map" type="Node2D" parent="."]
 
 [node name="Background" type="TileMapLayer" parent="Map"]
+position = Vector2(-8, 0)
 tile_map_data = PackedByteArray("AAD7//z/AQAAAAAAAAD7//3/AQAAAAEAAAD7//7/AQAAAAIAAAD7////AQAAAAMAAAD7/wAAAQAAAAQAAAD7/wEAAQAAAAUAAAD7/wIAAQAAAAYAAAD7/wMAAQAAAAcAAAD7/wQAAQAAAAgAAAD7/wUAAQAAAAkAAAD8//z/AQABAAAAAAD8//3/AQABAAEAAAD8//7/AQABAAIAAAD8////AQABAAMAAAD8/wAAAQABAAQAAAD8/wEAAQABAAUAAAD8/wIAAQABAAYAAAD8/wMAAQABAAcAAAD8/wQAAQABAAgAAAD8/wUAAQABAAkAAAD9//z/AQACAAAAAAD9//3/AQACAAEAAAD9//7/AQACAAIAAAD9////AQACAAMAAAD9/wAAAQACAAQAAAD9/wEAAQACAAUAAAD9/wIAAQACAAYAAAD9/wMAAQACAAcAAAD9/wQAAQACAAgAAAD9/wUAAQACAAkAAAD+//z/AQADAAAAAAD+//3/AQADAAEAAAD+//7/AQADAAIAAAD+////AQADAAMAAAD+/wAAAQADAAQAAAD+/wEAAQADAAUAAAD+/wIAAQADAAYAAAD+/wMAAQADAAcAAAD+/wQAAQADAAgAAAD+/wUAAQADAAkAAAD///z/AQAEAAAAAAD///3/AQAEAAEAAAD///7/AQAEAAIAAAD/////AQAEAAMAAAD//wAAAQAEAAQAAAD//wEAAQAEAAUAAAD//wIAAQAEAAYAAAD//wMAAQAEAAcAAAD//wQAAQAEAAgAAAD//wUAAQAEAAkAAAAAAPz/AQAFAAAAAAAAAP3/AQAFAAEAAAAAAP7/AQAFAAIAAAAAAP//AQAFAAMAAAAAAAAAAQAFAAQAAAAAAAEAAQAFAAUAAAAAAAIAAQAFAAYAAAAAAAMAAQAFAAcAAAAAAAQAAQAFAAgAAAAAAAUAAQAFAAkAAAABAPz/AQAGAAAAAAABAP3/AQAGAAEAAAABAP7/AQAGAAIAAAABAP//AQAGAAMAAAABAAAAAQAGAAQAAAABAAEAAQAGAAUAAAABAAIAAQAGAAYAAAABAAMAAQAGAAcAAAABAAQAAQAGAAgAAAABAAUAAQAGAAkAAAACAPz/AQAHAAAAAAACAP3/AQAHAAEAAAACAP7/AQAHAAIAAAACAP//AQAHAAMAAAACAAAAAQAHAAQAAAACAAEAAQAHAAUAAAACAAIAAQAHAAYAAAACAAMAAQAHAAcAAAACAAQAAQAHAAgAAAACAAUAAQAHAAkAAAADAPz/AQAIAAAAAAADAP3/AQAIAAEAAAADAP7/AQAIAAIAAAADAP//AQAIAAMAAAADAAAAAQAIAAQAAAADAAEAAQAIAAUAAAADAAIAAQAIAAYAAAADAAMAAQAIAAcAAAADAAQAAQAIAAgAAAADAAUAAQAIAAkAAAAEAPz/AQAJAAAAAAAEAP3/AQAJAAEAAAAEAP7/AQAJAAIAAAAEAP//AQAJAAMAAAAEAAAAAQAJAAQAAAAEAAEAAQAJAAUAAAAEAAIAAQAJAAYAAAAEAAMAAQAJAAcAAAAEAAQAAQAJAAgAAAAEAAUAAQAJAAkAAAAFAPz/AQAKAAAAAAAFAP3/AQAKAAEAAAAFAP7/AQAKAAIAAAAFAP//AQAKAAMAAAAFAAAAAQAKAAQAAAAFAAEAAQAKAAUAAAAFAAIAAQAKAAYAAAAFAAMAAQAKAAcAAAAFAAQAAQAKAAgAAAAFAAUAAQAKAAkAAAA=")
 tile_set = SubResource("TileSet_fvlgi")
 
 [node name="Foreground" type="TileMapLayer" parent="Map"]
+position = Vector2(-8, 0)
 tile_map_data = PackedByteArray("AAD9/wEAAAAAAAMAAAD+/wEAAAABAAMAAAD//wEAAAABAAMAAAAAAAEAAAABAAMAAAABAAEAAAABAAMAAAACAAEAAAABAAMAAAADAAEAAAACAAMAAAD9/wAAAAAAAAIAAAD9////AAAAAAIAAAADAAAAAAACAAIAAAADAP//AAACAAIAAAA=")
 tile_set = SubResource("TileSet_00sxi")
 
@@ -1501,10 +1489,10 @@ zoom = Vector2(8, 8)
 
 [node name="Player" parent="." instance=ExtResource("6_bmd0v")]
 unique_name_in_owner = true
-position = Vector2(5, 39)
+position = Vector2(0, 39)
 
 [node name="Principal" parent="." instance=ExtResource("7_d7fkr")]
-position = Vector2(8, -3)
+position = Vector2(0, -3)
 dialog = ExtResource("8_c2ynm")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Principal"]

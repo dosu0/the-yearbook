@@ -477,19 +477,17 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xwdjp"]
-radius = 7.0
-height = 14.0
+radius = 4.5
+height = 9.0
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_layer = 2
 script = ExtResource("1_212ke")
-metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_gerya")
-animation = &"sit_left"
+animation = &"idle_left"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2(0, 10)
+position = Vector2(0, 12)
 shape = SubResource("CapsuleShape2D_xwdjp")

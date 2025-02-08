@@ -2,14 +2,16 @@
 Principal: Would you like to go through a quick tutorial?
 - Yes, please!
 - No, thank you. => END
-Principal: [[Hi|Hello]], Welcome to freshman Orientation! Let me help you around!
+Principal: [[Hi|Hello]], Welcome to freshman orientation! Let me help you around!
 Principal: If you wanna walk around you can use the arrow keys or WASD.
 Principal: If you want to interact with someone go ahead and press SPACE!
-Principal: Your goal as a highschool student is to manage all aspects of your life.
+Principal: Your goal as a high school student is to manage all aspects of your life, and well[wait=1] graduate, obviously.
 Principal: These include your health, social life, academics, and mental health.
-Principal: Thats pretty much all I know after all I'm not a teacher. Here lets head to the cafeteria and check out all the Activities!
+Principal: You can see these stats, at any time, in the top left corner.
+Principal: If any of these stats reach 0, then you will fail to graduate high school[wait=1], and who knows what will happen after that?
+Principal: Anyway, thats pretty much all I know. After all, I'm not a teacher. Here, let's head to the cafeteria and check out all the activities!
 Principal: What do you want to do next?
-- Continue to Cafeteria => END
-- Say that one more time => start
+- Continue to cafeteria. => END
+- Say that one more time. => start
 => END
 

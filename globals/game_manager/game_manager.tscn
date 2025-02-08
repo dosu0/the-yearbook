@@ -1,0 +1,176 @@
+[gd_scene load_steps=9 format=3 uid="uid://cb15hcuip44wj"]
+
+[ext_resource type="Script" path="res://globals/game_manager/game_manager.gd" id="1_admtp"]
+[ext_resource type="FontFile" uid="uid://cd47d1ng5ylgm" path="res://assets/fonts/PixelOperator8.ttf" id="2_758er"]
+
+[sub_resource type="GDScript" id="GDScript_d368p"]
+script/source = "extends VBoxContainer
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(_delta: float) -> void:
+	pass
+"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hynre"]
+bg_color = Color(0.631373, 0.909804, 0.686275, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0vn1k"]
+bg_color = Color(0.883264, 0, 0.0706631, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6fxi3"]
+bg_color = Color(0, 0.632232, 0.969908, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x2jop"]
+bg_color = Color(0.894036, 0, 0.3018, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6qbpo"]
+bg_color = Color(0.92549, 0.686275, 0.0588235, 1)
+
+[node name="GameManager" type="Node"]
+script = ExtResource("1_admtp")
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="Stats" type="VBoxContainer" parent="HUD"]
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 730.0
+offset_bottom = 494.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 10
+script = SubResource("GDScript_d368p")
+
+[node name="HealthBar" type="ProgressBar" parent="HUD/Stats"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 7
+tooltip_text = "health"
+theme_override_fonts/font = ExtResource("2_758er")
+theme_override_font_sizes/font_size = 8
+theme_override_styles/fill = SubResource("StyleBoxFlat_hynre")
+step = 1.0
+value = 50.0
+rounded = true
+show_percentage = false
+
+[node name="Label" type="Label" parent="HUD/Stats/HealthBar"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_right = 78.0
+offset_bottom = 11.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_758er")
+theme_override_font_sizes/font_size = 32
+text = "health"
+vertical_alignment = 1
+
+[node name="AcademicsBar" type="ProgressBar" parent="HUD/Stats"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 7
+theme_override_fonts/font = ExtResource("2_758er")
+theme_override_font_sizes/font_size = 8
+theme_override_styles/fill = SubResource("StyleBoxFlat_0vn1k")
+step = 1.0
+value = 50.0
+rounded = true
+show_percentage = false
+
+[node name="Label" type="Label" parent="HUD/Stats/AcademicsBar"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_right = 126.0
+offset_bottom = 11.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_758er")
+theme_override_font_sizes/font_size = 32
+text = "academics
+"
+vertical_alignment = 1
+
+[node name="SocialBar" type="ProgressBar" parent="HUD/Stats"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 7
+tooltip_text = "social"
+theme_override_fonts/font = ExtResource("2_758er")
+theme_override_font_sizes/font_size = 8
+theme_override_styles/fill = SubResource("StyleBoxFlat_6fxi3")
+step = 1.0
+value = 50.0
+rounded = true
+show_percentage = false
+
+[node name="Label" type="Label" parent="HUD/Stats/SocialBar"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_right = 76.0
+offset_bottom = 11.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_758er")
+theme_override_font_sizes/font_size = 32
+text = "social
+"
+vertical_alignment = 1
+
+[node name="MentalBar" type="ProgressBar" parent="HUD/Stats"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 7
+theme_override_fonts/font = ExtResource("2_758er")
+theme_override_font_sizes/font_size = 8
+theme_override_styles/fill = SubResource("StyleBoxFlat_x2jop")
+step = 1.0
+value = 50.0
+rounded = true
+show_percentage = false
+
+[node name="Label" type="Label" parent="HUD/Stats/MentalBar"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_right = 82.0
+offset_bottom = 11.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_758er")
+theme_override_font_sizes/font_size = 32
+text = "mental"
+vertical_alignment = 1
+
+[node name="MoneyBar" type="ProgressBar" parent="HUD/Stats"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 7
+theme_override_fonts/font = ExtResource("2_758er")
+theme_override_font_sizes/font_size = 8
+theme_override_styles/fill = SubResource("StyleBoxFlat_6qbpo")
+step = 1.0
+value = 50.0
+rounded = true
+show_percentage = false
+
+[node name="Label" type="Label" parent="HUD/Stats/MoneyBar"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_right = 42.0
+offset_bottom = 11.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_758er")
+theme_override_font_sizes/font_size = 32
+text = "$$$"
+vertical_alignment = 1

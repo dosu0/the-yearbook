@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://ch0v5vyyhbdfv"]
+[gd_scene load_steps=17 format=3 uid="uid://ch0v5vyyhbdfv"]
 
 [ext_resource type="Texture2D" uid="uid://c0nm0wnbwfjw0" path="res://assets/sprites/title_screen_bg.png" id="1_l0oct"]
 [ext_resource type="FontFile" uid="uid://c0m4nf665wsf" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="2_t04f3"]
@@ -6,12 +6,31 @@
 [ext_resource type="Script" path="res://scenes/title_screen/play_button.gd" id="4_feyhv"]
 [ext_resource type="Script" path="res://scenes/title_screen/help_button.gd" id="5_367jm"]
 [ext_resource type="Script" path="res://scenes/title_screen/quit_button.gd" id="6_8tdq8"]
+[ext_resource type="Texture2D" uid="uid://bk7ub783jy4jx" path="res://assets/ui/flags.png" id="7_3k3q0"]
+[ext_resource type="Script" path="res://scenes/title_screen/korean.gd" id="8_6m1j6"]
+[ext_resource type="Script" path="res://scenes/title_screen/english.gd" id="8_nmp1p"]
+[ext_resource type="Script" path="res://scenes/title_screen/spanish.gd" id="10_mfd0v"]
 
 [sub_resource type="Theme" id="Theme_bmngr"]
 default_font = ExtResource("3_nueeg")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y11gg"]
 region = Rect2(655, 102, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y6qxq"]
+atlas = ExtResource("7_3k3q0")
+region = Rect2(1620, 175, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cm7ep"]
+atlas = ExtResource("7_3k3q0")
+region = Rect2(260, 175, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4jjle"]
+atlas = ExtResource("7_3k3q0")
+region = Rect2(1450, 175, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8qqm7"]
+atlas = SubResource("AtlasTexture_4jjle")
 
 [node name="TitleScreen" type="TextureRect"]
 anchors_preset = 15
@@ -63,6 +82,7 @@ theme_override_constants/separation = 30
 
 [node name="Play" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer/MenuOptions"]
 layout_mode = 2
+size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = SubResource("Theme_bmngr")
 theme_override_fonts/font = ExtResource("2_t04f3")
@@ -86,7 +106,6 @@ size_flags_vertical = 3
 theme = SubResource("Theme_bmngr")
 theme_override_fonts/font = ExtResource("2_t04f3")
 theme_override_font_sizes/font_size = 48
-disabled = true
 text = "Save / Load"
 
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer/MenuOptions"]
@@ -123,3 +142,39 @@ theme_override_fonts/font = ExtResource("2_t04f3")
 theme_override_font_sizes/font_size = 24
 text = "by Robbie, Minchan, and Samuel"
 horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -473.0
+offset_top = 1111.5
+offset_right = -433.0
+offset_bottom = 1151.5
+
+[node name="Languages" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -418.0
+offset_top = 86.5
+offset_right = -146.0
+offset_bottom = 166.5
+grow_horizontal = 0
+theme_override_constants/separation = 16
+
+[node name="English" type="TextureButton" parent="Languages"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = SubResource("AtlasTexture_y6qxq")
+script = ExtResource("8_nmp1p")
+
+[node name="Korean" type="TextureButton" parent="Languages"]
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_cm7ep")
+script = ExtResource("8_6m1j6")
+
+[node name="Spanish" type="TextureButton" parent="Languages"]
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_8qqm7")
+script = ExtResource("10_mfd0v")

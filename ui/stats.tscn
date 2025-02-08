@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bw708f81hasfj"]
+[gd_scene load_steps=8 format=3 uid="uid://t6ko117guvsl"]
 
 [ext_resource type="FontFile" uid="uid://cd47d1ng5ylgm" path="res://assets/fonts/PixelOperator8.ttf" id="1_nxq1q"]
 
@@ -28,9 +28,9 @@ bg_color = Color(0.92549, 0.686275, 0.0588235, 1)
 [node name="Stats" type="VBoxContainer"]
 offset_left = 31.0
 offset_top = 19.0
-offset_right = 1279.0
-offset_bottom = 571.0
-theme_override_constants/separation = 10
+offset_right = 1005.0
+offset_bottom = 501.0
+theme_override_constants/separation = 0
 script = SubResource("GDScript_d368p")
 
 [node name="Health" type="ProgressBar" parent="."]
@@ -45,20 +45,6 @@ max_value = 10.0
 value = 5.0
 show_percentage = false
 
-[node name="Label" type="Label" parent="Health"]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_top = -11.5
-offset_right = 78.0
-offset_bottom = 11.5
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("1_nxq1q")
-theme_override_font_sizes/font_size = 32
-text = "health"
-vertical_alignment = 1
-
 [node name="Academics" type="ProgressBar" parent="."]
 unique_name_in_owner = true
 layout_mode = 2
@@ -69,21 +55,6 @@ theme_override_styles/fill = SubResource("StyleBoxFlat_0vn1k")
 max_value = 10.0
 value = 7.0
 show_percentage = false
-
-[node name="Label" type="Label" parent="Academics"]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_top = -11.5
-offset_right = 126.0
-offset_bottom = 11.5
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("1_nxq1q")
-theme_override_font_sizes/font_size = 32
-text = "academics
-"
-vertical_alignment = 1
 
 [node name="Social" type="ProgressBar" parent="."]
 unique_name_in_owner = true
@@ -97,21 +68,6 @@ max_value = 10.0
 value = 6.0
 show_percentage = false
 
-[node name="Label" type="Label" parent="Social"]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_top = -11.5
-offset_right = 76.0
-offset_bottom = 11.5
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("1_nxq1q")
-theme_override_font_sizes/font_size = 32
-text = "social
-"
-vertical_alignment = 1
-
 [node name="Mental" type="ProgressBar" parent="."]
 unique_name_in_owner = true
 layout_mode = 2
@@ -123,20 +79,6 @@ max_value = 10.0
 value = 3.0
 show_percentage = false
 
-[node name="Label" type="Label" parent="Mental"]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_top = -11.5
-offset_right = 82.0
-offset_bottom = 11.5
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("1_nxq1q")
-theme_override_font_sizes/font_size = 32
-text = "mental"
-vertical_alignment = 1
-
 [node name="Money" type="ProgressBar" parent="."]
 unique_name_in_owner = true
 layout_mode = 2
@@ -147,17 +89,3 @@ theme_override_styles/fill = SubResource("StyleBoxFlat_6qbpo")
 max_value = 10.0
 value = 8.0
 show_percentage = false
-
-[node name="Label" type="Label" parent="Money"]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_top = -11.5
-offset_right = 42.0
-offset_bottom = 11.5
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("1_nxq1q")
-theme_override_font_sizes/font_size = 32
-text = "$$$"
-vertical_alignment = 1

@@ -11,6 +11,7 @@ position = Vector2(2, 0)
 script = ExtResource("1_5gtvu")
 
 [node name="InteractionArea" parent="." instance=ExtResource("2_tvwlo")]
+visible = false
 action_name = "talk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]

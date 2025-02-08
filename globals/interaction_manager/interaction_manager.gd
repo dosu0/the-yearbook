@@ -29,10 +29,13 @@ func _process(_delta) -> void:
 	else:
 		arrow.hide()
 
+# This function is used to help find the closest NPC or interactable object
 func _sort_by_distance_to_player(area1: Area2D, area2: Area2D) -> bool:
+	# find the distance between the player and the first area
 	var d1 = player.global_position.distance_to(area1.global_position)
+	# find the distance between the player and the second area
 	var d2 = player.global_position.distance_to(area2.global_position)
-	
+	# return true if the first area is closer
 	return d1 < d2
 
 func _input(event):

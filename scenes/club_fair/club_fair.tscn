@@ -1,6 +1,5 @@
-[gd_scene load_steps=49 format=4 uid="uid://bqc2t85awyjp7"]
+[gd_scene load_steps=56 format=4 uid="uid://bqc2t85awyjp7"]
 
-[ext_resource type="PackedScene" uid="uid://bw708f81hasfj" path="res://ui/stats.tscn" id="2_prcfj"]
 [ext_resource type="Texture2D" uid="uid://jcxo6qb34oyo" path="res://assets/sprites/scenes/cafeteria.png" id="3_tn7hj"]
 [ext_resource type="Script" path="res://scenes/club_fair/next_button.gd" id="3_up0gy"]
 [ext_resource type="Texture2D" uid="uid://c2cqxksj6u5ed" path="res://assets/sprites/interior/0_Walls.png" id="4_iu48d"]
@@ -15,13 +14,14 @@
 [ext_resource type="Resource" uid="uid://bytna3we4fuqn" path="res://dialog/basketball_coach.dialogue" id="11_eo15v"]
 [ext_resource type="Resource" uid="uid://s5cn6ixmc3fs" path="res://dialog/fbla_officer.dialogue" id="13_h1xlm"]
 [ext_resource type="Texture2D" uid="uid://d2j8xbmtjrqv0" path="res://assets/sprites/characters/fbla_officer.png" id="13_rdxba"]
+[ext_resource type="Texture2D" uid="uid://cd7kf2hro6o4c" path="res://assets/sprites/characters/npc.png" id="15_2xmb3"]
 [ext_resource type="Texture2D" uid="uid://bpaw1omng4dbi" path="res://assets/ui/ui.png" id="15_6rcdk"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_0m2q0"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_oteyo"]
 atlas = ExtResource("15_6rcdk")
 region = Rect2(0, 64, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_v0f62"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_koxkp"]
 atlas = ExtResource("15_6rcdk")
 region = Rect2(0, 80, 16, 16)
 
@@ -7599,27 +7599,27 @@ animations = [{
 "speed": 4.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_a3x4a"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_mi546"]
 atlas = ExtResource("13_rdxba")
 region = Rect2(288, 32, 16, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_a8glo"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_1cmgm"]
 atlas = ExtResource("13_rdxba")
 region = Rect2(304, 32, 16, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_r2vkq"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_xxxwn"]
 atlas = ExtResource("13_rdxba")
 region = Rect2(320, 32, 16, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_0w04n"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ao17x"]
 atlas = ExtResource("13_rdxba")
 region = Rect2(336, 32, 16, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_kwkop"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_8r0ea"]
 atlas = ExtResource("13_rdxba")
 region = Rect2(352, 32, 16, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_rhuy7"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_qdi3r"]
 atlas = ExtResource("13_rdxba")
 region = Rect2(368, 32, 16, 32)
 
@@ -7627,22 +7627,72 @@ region = Rect2(368, 32, 16, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_a3x4a")
+"texture": SubResource("AtlasTexture_mi546")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_a8glo")
+"texture": SubResource("AtlasTexture_1cmgm")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_r2vkq")
+"texture": SubResource("AtlasTexture_xxxwn")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_0w04n")
+"texture": SubResource("AtlasTexture_ao17x")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_kwkop")
+"texture": SubResource("AtlasTexture_8r0ea")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_rhuy7")
+"texture": SubResource("AtlasTexture_qdi3r")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i7j4i"]
+atlas = ExtResource("15_2xmb3")
+region = Rect2(288, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6rm0r"]
+atlas = ExtResource("15_2xmb3")
+region = Rect2(304, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a82pl"]
+atlas = ExtResource("15_2xmb3")
+region = Rect2(320, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4rgct"]
+atlas = ExtResource("15_2xmb3")
+region = Rect2(336, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5rapa"]
+atlas = ExtResource("15_2xmb3")
+region = Rect2(352, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5v42w"]
+atlas = ExtResource("15_2xmb3")
+region = Rect2(368, 32, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5d1c2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i7j4i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6rm0r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a82pl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4rgct")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5rapa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5v42w")
 }],
 "loop": true,
 "name": &"default",
@@ -7651,34 +7701,23 @@ animations = [{
 
 [node name="ClubFair" type="Node2D"]
 
-[node name="HUD" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Stats" parent="HUD" instance=ExtResource("2_prcfj")]
-unique_name_in_owner = true
-z_index = 1
-anchors_preset = -1
-anchor_right = 0.0972222
-anchor_bottom = 0.128086
-offset_left = 32.0
-offset_right = 320.0
-offset_bottom = 194.0
-metadata/_edit_use_anchors_ = true
-
-[node name="NextButton" type="TextureButton" parent="HUD"]
+[node name="NextButton" type="TextureButton" parent="CanvasLayer"]
 anchors_preset = 3
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -195.0
-offset_top = -182.0
-offset_right = -179.0
-offset_bottom = -166.0
+offset_left = -182.0
+offset_top = -171.0
+offset_right = -166.0
+offset_bottom = -155.0
 grow_horizontal = 0
 grow_vertical = 0
 scale = Vector2(8, 8)
-texture_normal = SubResource("AtlasTexture_0m2q0")
-texture_pressed = SubResource("AtlasTexture_v0f62")
+texture_normal = SubResource("AtlasTexture_oteyo")
+texture_pressed = SubResource("AtlasTexture_koxkp")
 script = ExtResource("3_up0gy")
 
 [node name="Map" type="Node2D" parent="."]
@@ -7692,16 +7731,16 @@ tile_map_data = PackedByteArray("AAAHAP7/AAAFACIAAAAHAP//AAAFACMAAAAHAAAAAAAFACQ
 tile_set = SubResource("TileSet_00sxi")
 
 [node name="Foreground" type="TileMapLayer" parent="Map"]
-tile_map_data = PackedByteArray("AAD8////AgANACoAAAACAP//AgAGABEAAAADAP//AgAHABEAAAAEAP//AgAHAAMAAAAEAAAAAgAHAAQAAAADAAAAAAAJAAMAAAD9////AAAJAAIAAAD9/wAAAAAJAAMAAAD3////AAAJAAIAAAD3/wAAAAAJAAMAAAA=")
+tile_map_data = PackedByteArray("AAD8////AgANACoAAAACAP//AgAGABEAAAADAP//AgAHABEAAAAEAP//AgANAC4AAAAEAAAAAgANAC8AAAADAAAAAAAJAAMAAAD9////AgALABgAAAD9/wAAAAAJAAMAAAD3////AAAJAAIAAAD3/wAAAAAJAAMAAAD+//7/AgAPACsAAAD+////AgAPACwAAAAEAP7/AgANAC0AAAD9//7/AgALABcAAAAJAP//AAAJAAIAAAAJAAAAAAAJAAMAAAA=")
 tile_set = SubResource("TileSet_sqkj7")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1, -37)
+zoom = Vector2(10, 10)
 
 [node name="Player" parent="." instance=ExtResource("6_vxdke")]
 unique_name_in_owner = true
 position = Vector2(5, 39)
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(0, -1)
-zoom = Vector2(8, 8)
 
 [node name="MusicTeacher" parent="." instance=ExtResource("7_caph6")]
 position = Vector2(56, -49)
@@ -7712,11 +7751,11 @@ sprite_frames = SubResource("SpriteFrames_beikx")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="BasketballCoach" parent="." instance=ExtResource("7_caph6")]
+[node name="Coach" parent="." instance=ExtResource("7_caph6")]
 position = Vector2(-40, -48)
 dialog = ExtResource("11_eo15v")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="BasketballCoach"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Coach"]
 sprite_frames = SubResource("SpriteFrames_ixtit")
 animation = &"idle"
 autoplay = "idle"
@@ -7727,4 +7766,11 @@ dialog = ExtResource("13_h1xlm")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="FblaOfficer"]
 sprite_frames = SubResource("SpriteFrames_bc45p")
+autoplay = "default"
+
+[node name="NPC" parent="." instance=ExtResource("7_caph6")]
+position = Vector2(153, -49)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="NPC"]
+sprite_frames = SubResource("SpriteFrames_5d1c2")
 autoplay = "default"
