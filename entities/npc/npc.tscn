@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://6l1vnpb2ds82"]
 
-[ext_resource type="Script" path="res://entities/npc/npc.gd" id="1_5gtvu"]
+[ext_resource type="Script" uid="uid://c1amslxu3avow" path="res://entities/npc/npc.gd" id="1_5gtvu"]
 [ext_resource type="PackedScene" uid="uid://dgppev51jc1wy" path="res://entities/interaction_area/interaction_area.tscn" id="2_tvwlo"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ql86b"]

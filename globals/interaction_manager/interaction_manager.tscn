@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cefmbvtv6qfqv"]
 
-[ext_resource type="Script" path="res://globals/interaction_manager/interaction_manager.gd" id="1_4qltq"]
+[ext_resource type="Script" uid="uid://c3bb0gqx1rft4" path="res://globals/interaction_manager/interaction_manager.gd" id="1_4qltq"]
 [ext_resource type="PackedScene" uid="uid://ca4pat7gv1ayd" path="res://ui/down_arrow.tscn" id="2_ldlpg"]
 
 [node name="InteractionManager" type="Node2D"]

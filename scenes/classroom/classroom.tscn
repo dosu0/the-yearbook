@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bpyalk6ynuhmc" path="res://assets/sprites/interior/5_Classroom_and_library_16x16.png" id="5_han2k"]
 [ext_resource type="PackedScene" uid="uid://c2s4mm2a6qn3n" path="res://entities/player/player.tscn" id="7_vtahk"]
 [ext_resource type="Texture2D" uid="uid://barkf8w3yqakb" path="res://assets/sprites/characters/student1.png" id="8_qrvtl"]
-[ext_resource type="Script" path="res://scenes/classroom/sit.gd" id="9_5g30s"]
+[ext_resource type="Script" uid="uid://b0c27duwbji4d" path="res://scenes/classroom/sit.gd" id="9_5g30s"]
 [ext_resource type="PackedScene" uid="uid://dgppev51jc1wy" path="res://entities/interaction_area/interaction_area.tscn" id="9_aknfr"]
 [ext_resource type="Texture2D" uid="uid://i11md4vkrh02" path="res://assets/sprites/characters/music_lady.png" id="10_ax7pm"]
 [ext_resource type="Texture2D" uid="uid://bfbi5j5l6h4wr" path="res://scenes/classroom/1_student.png" id="10_qqif7"]
