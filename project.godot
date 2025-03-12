@@ -23,8 +23,8 @@ GameManager="*res://globals/game_manager/game_manager.tscn"
 
 [dialogue_manager]
 
-general/balloon_path="res://ui/dialog/dialog.tscn"
-general/wrap_lines=true
+editor/wrap_long_lines=true
+runtime/balloon_path="res://ui/dialog/dialog.tscn"
 
 [display]
 
