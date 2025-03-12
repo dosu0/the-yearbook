@@ -9,9 +9,9 @@
 [ext_resource type="Script" uid="uid://b0c27duwbji4d" path="res://scenes/classroom/sit.gd" id="9_5g30s"]
 [ext_resource type="PackedScene" uid="uid://dgppev51jc1wy" path="res://entities/interaction_area/interaction_area.tscn" id="9_aknfr"]
 [ext_resource type="Texture2D" uid="uid://i11md4vkrh02" path="res://assets/sprites/characters/music_lady.png" id="10_ax7pm"]
-[ext_resource type="Texture2D" uid="uid://bfbi5j5l6h4wr" path="res://scenes/classroom/1_student.png" id="10_qqif7"]
-[ext_resource type="Texture2D" uid="uid://dkjqxhtsdvytd" path="res://scenes/classroom/2_student.png" id="11_wofit"]
-[ext_resource type="Texture2D" uid="uid://b7oe8phvs0kph" path="res://scenes/classroom/4_student.png" id="12_owysf"]
+[ext_resource type="Texture2D" uid="uid://bfbi5j5l6h4wr" path="res://assets/sprites/characters/1_student.png" id="10_qqif7"]
+[ext_resource type="Texture2D" uid="uid://dkjqxhtsdvytd" path="res://assets/sprites/characters/2_student.png" id="11_wofit"]
+[ext_resource type="Texture2D" uid="uid://b7oe8phvs0kph" path="res://assets/sprites/characters/4_student.png" id="12_owysf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3pxmr"]
 texture = ExtResource("2_pbcd7")
