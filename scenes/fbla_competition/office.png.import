@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bt328p55o2j6k"
-path="res://.godot/imported/Modern_Office.png-27ecc0331578abc96ffc307be978f838.ctex"
+uid="uid://dt7d2drwu7o06"
+path="res://.godot/imported/office.png-d9c51367b35b5c9478e0b9debae67b53.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/FBLAcompetition/Modern_Office.png"
-dest_files=["res://.godot/imported/Modern_Office.png-27ecc0331578abc96ffc307be978f838.ctex"]
+source_file="res://scenes/fbla_competition/office.png"
+dest_files=["res://.godot/imported/office.png-d9c51367b35b5c9478e0b9debae67b53.ctex"]
 
 [params]
 

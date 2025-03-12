@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8g5j7n772nik"
-path="res://.godot/imported/RoomBuilder.png-395270ce2efa1e1b8a4083c5b3d301b0.ctex"
+uid="uid://bt328p55o2j6k"
+path="res://.godot/imported/Modern_Office.png-4dfec6ee04680f4e1f0ad9de9225db5d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/FBLAcompetition/RoomBuilder.png"
-dest_files=["res://.godot/imported/RoomBuilder.png-395270ce2efa1e1b8a4083c5b3d301b0.ctex"]
+source_file="res://scenes/fbla_competition/Modern_Office.png"
+dest_files=["res://.godot/imported/Modern_Office.png-4dfec6ee04680f4e1f0ad9de9225db5d.ctex"]
 
 [params]
 
