@@ -85,14 +85,13 @@ layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_top = -11.5
-offset_right = 126.0
-offset_bottom = 11.5
+offset_top = -33.5
+offset_right = 252.0
+offset_bottom = 33.5
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_758er")
 theme_override_font_sizes/font_size = 32
-text = "academics
-"
+text = "academics"
 vertical_alignment = 1
 
 [node name="SocialBar" type="ProgressBar" parent="HUD/Stats"]
@@ -113,14 +112,13 @@ layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_top = -11.5
-offset_right = 76.0
-offset_bottom = 11.5
+offset_top = -33.5
+offset_right = 341.0
+offset_bottom = 33.5
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_758er")
 theme_override_font_sizes/font_size = 32
-text = "social
-"
+text = "social"
 vertical_alignment = 1
 
 [node name="MentalBar" type="ProgressBar" parent="HUD/Stats"]
@@ -140,9 +138,9 @@ layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_top = -11.5
-offset_right = 82.0
-offset_bottom = 11.5
+offset_top = -16.0
+offset_right = 164.0
+offset_bottom = 16.0
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_758er")
 theme_override_font_sizes/font_size = 32
