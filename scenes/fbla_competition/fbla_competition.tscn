@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=4 uid="uid://cb35dljn7gnx0"]
+[gd_scene load_steps=43 format=4 uid="uid://cb35dljn7gnx0"]
 
 [ext_resource type="Script" uid="uid://535nrwmeuy05" path="res://scenes/tutorial/tutorial.gd" id="1_g8fyv"]
 [ext_resource type="Texture2D" uid="uid://jcxo6qb34oyo" path="res://assets/sprites/scenes/cafeteria.png" id="2_4hl1q"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bwrujsv8gh7j0" path="res://assets/sprites/characters/Daniel hair.png" id="8_mp6vc"]
 [ext_resource type="Texture2D" uid="uid://ur1kac2mchex" path="res://assets/sprites/characters/sam hair.png" id="9_t7kxf"]
 [ext_resource type="Texture2D" uid="uid://ica5h3h5k3p4" path="res://assets/sprites/characters/judge1.png" id="10_37dx8"]
+[ext_resource type="Texture2D" uid="uid://d2uf8g3vg2kyk" path="res://assets/sprites/exterior/13_School_16x16.png" id="11_ncjk5"]
 [ext_resource type="Texture2D" uid="uid://birs0erbj3qwk" path="res://assets/sprites/characters/judge2.1.png" id="11_v0kx3"]
 [ext_resource type="Texture2D" uid="uid://bkyp5lniokpox" path="res://assets/sprites/characters/judge3.png" id="12_7iqot"]
 [ext_resource type="Texture2D" uid="uid://cijjtruyl4b6m" path="res://assets/sprites/interior/28_office.png" id="13_b3kv7"]
@@ -9891,6 +9892,9 @@ texture = ExtResource("10_37dx8")
 24:27/0 = 0
 24:26/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4k1ak"]
+texture = ExtResource("11_ncjk5")
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7brii"]
 texture = ExtResource("11_v0kx3")
 0:0/0 = 0
@@ -14177,6 +14181,7 @@ sources/11 = SubResource("TileSetAtlasSource_bq3ob")
 sources/12 = SubResource("TileSetAtlasSource_fp3wj")
 sources/13 = SubResource("TileSetAtlasSource_lewwe")
 sources/14 = SubResource("TileSetAtlasSource_mxql6")
+sources/4 = SubResource("TileSetAtlasSource_4k1ak")
 
 [node name="FBLACompetition" type="Node2D"]
 script = ExtResource("1_g8fyv")
