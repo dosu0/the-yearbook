@@ -1,12 +1,12 @@
 ~ start
 Yourself: Should I cheat?
-- Yes, I need to pass this test! [color=green](+academics)[/color] [color=orange](70% success rate)[/color] => cheat
-- No, it's not worth it. [color=red](-academics)[/color] => no_cheat
+- Yes, I need to pass this test!\n	 [color=green](+academics)[/color]\n   	[color=orange](70% success rate)[/color] => cheat
+- No, it's not worth it.\n	[color=red](-academics)[/color] => no_cheat
 => END
 
 ~ cheat
-%5 Yourself: I didn't get caught! [color=green]+20 academics[/color] [do GameManager.academics += 20]
-%3 Yourself: I got caught! [color=red]-40 academics[/color] [do GameManager.academics -= 40]
+%1 Yourself: I didn't get caught! [color=green]+20 academics[/color] [do GameManager.academics += 20]
+%5 Yourself: I got caught! [color=red]-40 academics[/color] [do GameManager.academics -= 40]
 => END
 
 ~ no_cheat
