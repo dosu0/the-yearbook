@@ -1,16 +1,12 @@
-[gd_scene load_steps=52 format=4 uid="uid://cb35dljn7gnx0"]
+[gd_scene load_steps=41 format=4 uid="uid://cb35dljn7gnx0"]
 
-[ext_resource type="Script" uid="uid://535nrwmeuy05" path="res://scenes/tutorial/tutorial.gd" id="1_g8fyv"]
+[ext_resource type="Script" uid="uid://s4j2afuh87na" path="res://scenes/fbla_competition/fbla_competition.gd" id="1_dlcmt"]
 [ext_resource type="Texture2D" uid="uid://jcxo6qb34oyo" path="res://assets/sprites/scenes/cafeteria.png" id="2_4hl1q"]
 [ext_resource type="Texture2D" uid="uid://jyslkfbmmhba" path="res://assets/sprites/scenes/office.png" id="3_ti3x2"]
 [ext_resource type="Texture2D" uid="uid://uqa6sbdq258i" path="res://assets/sprites/interior/1_Generic_16x16.png" id="4_si1t7"]
 [ext_resource type="Texture2D" uid="uid://f8t1tafwvt5d" path="res://assets/sprites/characters/Robbie.png" id="5_h82tq"]
-[ext_resource type="PackedScene" uid="uid://c2s4mm2a6qn3n" path="res://entities/player/player.tscn" id="5_txmqi"]
 [ext_resource type="Texture2D" uid="uid://byf1rjkjcvlhv" path="res://assets/sprites/characters/Daniel.png" id="6_icm4p"]
-[ext_resource type="PackedScene" uid="uid://6l1vnpb2ds82" path="res://entities/npc/npc.tscn" id="6_sc7t5"]
-[ext_resource type="Resource" uid="uid://4mtftwrxuurf" path="res://dialog/help.dialogue" id="7_uctnk"]
 [ext_resource type="Texture2D" uid="uid://cr64wg1vm0w7q" path="res://assets/sprites/characters/Robbie hair.png" id="7_vcbcc"]
-[ext_resource type="Texture2D" uid="uid://btmahfb1yawtn" path="res://assets/sprites/characters/principal.png" id="8_cl6je"]
 [ext_resource type="Texture2D" uid="uid://bwrujsv8gh7j0" path="res://assets/sprites/characters/Daniel hair.png" id="8_mp6vc"]
 [ext_resource type="Texture2D" uid="uid://ur1kac2mchex" path="res://assets/sprites/characters/sam hair.png" id="9_t7kxf"]
 [ext_resource type="Texture2D" uid="uid://ica5h3h5k3p4" path="res://assets/sprites/characters/judge1.png" id="10_37dx8"]
@@ -14182,58 +14178,8 @@ sources/12 = SubResource("TileSetAtlasSource_fp3wj")
 sources/13 = SubResource("TileSetAtlasSource_lewwe")
 sources/14 = SubResource("TileSetAtlasSource_mxql6")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_m03ym"]
-atlas = ExtResource("8_cl6je")
-region = Rect2(288, 32, 16, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2h2rd"]
-atlas = ExtResource("8_cl6je")
-region = Rect2(304, 32, 16, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_rdbda"]
-atlas = ExtResource("8_cl6je")
-region = Rect2(320, 32, 16, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1eiju"]
-atlas = ExtResource("8_cl6je")
-region = Rect2(336, 32, 16, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_c6it8"]
-atlas = ExtResource("8_cl6je")
-region = Rect2(352, 32, 16, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_aun8y"]
-atlas = ExtResource("8_cl6je")
-region = Rect2(368, 32, 16, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_i3nbt"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_m03ym")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2h2rd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_rdbda")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1eiju")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_c6it8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_aun8y")
-}],
-"loop": true,
-"name": &"idle",
-"speed": 6.0
-}]
-
 [node name="FBLACompetition" type="Node2D"]
-script = ExtResource("1_g8fyv")
+script = ExtResource("1_dlcmt")
 
 [node name="Map" type="Node2D" parent="."]
 
@@ -14258,25 +14204,10 @@ tile_map_data = PackedByteArray("AAD+/wMAAwALAB0AAAD+/wIAAwALABwAAAAAAAIABQAIABw
 tile_set = SubResource("TileSet_00sxi")
 
 [node name="Foreground" type="TileMapLayer" parent="Map/Foreground"]
-visible = false
 position = Vector2(-8, 2)
 tile_map_data = PackedByteArray("AAD+/wMAAgANABQAAAD+/wQAAgANABUAAAAAAAMAAgANABQAAAAAAAQAAgANABUAAAACAAMAAgANABQAAAACAAQAAgANABUAAAABAP//BwALAAcAAAABAAAABwALAAgAAAAAAP7/DAAeABQAAAAAAP//DAAeABUAAAD///7/DQAVABoAAAD/////DQAVABsAAAD+//7/DgAPACAAAAD+////DgAPACEAAAA=")
 tile_set = SubResource("TileSet_00sxi")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-visible = false
-zoom = Vector2(8, 8)
-
-[node name="Player" parent="." instance=ExtResource("5_txmqi")]
-unique_name_in_owner = true
-visible = false
-position = Vector2(43, 3)
-
-[node name="Principal" parent="." instance=ExtResource("6_sc7t5")]
-position = Vector2(0, -3)
-dialog = ExtResource("7_uctnk")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Principal"]
-sprite_frames = SubResource("SpriteFrames_i3nbt")
-animation = &"idle"
-autoplay = "idle"
+position = Vector2(0, 48)
+zoom = Vector2(10, 10)
