@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://bubfjj6cwyuuk"
+path="res://.godot/imported/fbla.dialogue-aa5ff3936f4bad48d350341a7265bda5.tres"
+
+[deps]
+
+source_file="res://dialog/fbla.dialogue"
+dest_files=["res://.godot/imported/fbla.dialogue-aa5ff3936f4bad48d350341a7265bda5.tres"]
+
+[params]
+
+defaults=true
