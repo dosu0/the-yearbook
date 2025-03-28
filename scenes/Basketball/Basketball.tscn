@@ -1,9 +1,9 @@
 [gd_scene load_steps=25 format=4 uid="uid://bqh6oouu80ibi"]
 
-[ext_resource type="Script" path="res://scenes/tutorial/tutorial.gd" id="1_s2rim"]
+[ext_resource type="Script" uid="uid://535nrwmeuy05" path="res://scenes/tutorial/tutorial.gd" id="1_s2rim"]
 [ext_resource type="Texture2D" uid="uid://jcxo6qb34oyo" path="res://assets/sprites/scenes/cafeteria.png" id="2_6j0t5"]
 [ext_resource type="Texture2D" uid="uid://jyslkfbmmhba" path="res://assets/sprites/scenes/office.png" id="3_00j1h"]
-[ext_resource type="Texture2D" uid="uid://c7f2uobcobjup" path="res://scenes/Basketball/ME_Singles_School_16x16_Basketball_Court_6.png" id="4_wsnwo"]
+[ext_resource type="Texture2D" uid="uid://c7f2uobcobjup" path="res://scenes/basketball/ME_Singles_School_16x16_Basketball_Court_6.png" id="4_wsnwo"]
 [ext_resource type="Texture2D" uid="uid://uqa6sbdq258i" path="res://assets/sprites/interior/1_Generic_16x16.png" id="5_e46ok"]
 [ext_resource type="Texture2D" uid="uid://cokvicr1sitgd" path="res://assets/sprites/interior/6_Music_and_sport_16x16.png" id="6_eofcb"]
 [ext_resource type="PackedScene" uid="uid://c2s4mm2a6qn3n" path="res://entities/player/player.tscn" id="7_wgc3v"]
@@ -2286,7 +2286,7 @@ animations = [{
 "speed": 6.0
 }]
 
-[node name="Tutorial" type="Node2D"]
+[node name="Basketball" type="Node2D"]
 script = ExtResource("1_s2rim")
 
 [node name="Map" type="Node2D" parent="."]

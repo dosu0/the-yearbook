@@ -1,0 +1,13 @@
+~ start
+Yourself: Sammy is talking a lot of smack, should I fight him?
+- Yea, Sammy can get these hands\n
+	(-health) (+social)
+- No, it's not worth it.\n
+(-social)
+	Nathan: You picked the first one.
+- Second one
+	Nathan: You picked the second one.
+- Start again => start
+- End the conversation => END
+Nathan: For more information see the online documentation.
+=> END

@@ -1,9 +1,9 @@
 [gd_scene load_steps=25 format=4 uid="uid://cvu07ywfow6yb"]
 
-[ext_resource type="Script" path="res://scenes/tutorial/tutorial.gd" id="1_chcwh"]
+[ext_resource type="Script" uid="uid://535nrwmeuy05" path="res://scenes/tutorial/tutorial.gd" id="1_chcwh"]
 [ext_resource type="Texture2D" uid="uid://jcxo6qb34oyo" path="res://assets/sprites/scenes/cafeteria.png" id="2_ainif"]
 [ext_resource type="Texture2D" uid="uid://jyslkfbmmhba" path="res://assets/sprites/scenes/office.png" id="3_kegwp"]
-[ext_resource type="Texture2D" uid="uid://c7f2uobcobjup" path="res://scenes/Basketball/ME_Singles_School_16x16_Basketball_Court_6.png" id="4_mbeb1"]
+[ext_resource type="Texture2D" uid="uid://c7f2uobcobjup" path="res://scenes/basketball/ME_Singles_School_16x16_Basketball_Court_6.png" id="4_mbeb1"]
 [ext_resource type="Texture2D" uid="uid://uqa6sbdq258i" path="res://assets/sprites/interior/1_Generic_16x16.png" id="5_tmxpw"]
 [ext_resource type="Texture2D" uid="uid://cokvicr1sitgd" path="res://assets/sprites/interior/6_Music_and_sport_16x16.png" id="6_c27fe"]
 [ext_resource type="PackedScene" uid="uid://c2s4mm2a6qn3n" path="res://entities/player/player.tscn" id="7_ah6ra"]
