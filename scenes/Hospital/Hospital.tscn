@@ -1,18 +1,18 @@
-[gd_scene load_steps=25 format=4 uid="uid://bqh6oouu80ibi"]
+[gd_scene load_steps=25 format=4 uid="uid://cvu07ywfow6yb"]
 
-[ext_resource type="Script" uid="uid://535nrwmeuy05" path="res://scenes/tutorial/tutorial.gd" id="1_s2rim"]
-[ext_resource type="Texture2D" uid="uid://jcxo6qb34oyo" path="res://assets/sprites/scenes/cafeteria.png" id="2_6j0t5"]
-[ext_resource type="Texture2D" uid="uid://jyslkfbmmhba" path="res://assets/sprites/scenes/office.png" id="3_00j1h"]
-[ext_resource type="Texture2D" uid="uid://c7f2uobcobjup" path="res://scenes/basketball/ME_Singles_School_16x16_Basketball_Court_6.png" id="4_wsnwo"]
-[ext_resource type="Texture2D" uid="uid://uqa6sbdq258i" path="res://assets/sprites/interior/1_Generic_16x16.png" id="5_e46ok"]
-[ext_resource type="Texture2D" uid="uid://cokvicr1sitgd" path="res://assets/sprites/interior/6_Music_and_sport_16x16.png" id="6_eofcb"]
-[ext_resource type="PackedScene" uid="uid://c2s4mm2a6qn3n" path="res://entities/player/player.tscn" id="7_wgc3v"]
-[ext_resource type="PackedScene" uid="uid://6l1vnpb2ds82" path="res://entities/npc/npc.tscn" id="8_w8rww"]
-[ext_resource type="Resource" uid="uid://4mtftwrxuurf" path="res://dialog/help.dialogue" id="9_3ua3d"]
-[ext_resource type="Texture2D" uid="uid://btmahfb1yawtn" path="res://assets/sprites/characters/principal.png" id="10_mrwy7"]
+[ext_resource type="Script" uid="uid://535nrwmeuy05" path="res://scenes/tutorial/tutorial.gd" id="1_chcwh"]
+[ext_resource type="Texture2D" uid="uid://jcxo6qb34oyo" path="res://assets/sprites/scenes/cafeteria.png" id="2_ainif"]
+[ext_resource type="Texture2D" uid="uid://jyslkfbmmhba" path="res://assets/sprites/scenes/office.png" id="3_kegwp"]
+[ext_resource type="Texture2D" uid="uid://c7f2uobcobjup" path="res://scenes/basketball/ME_Singles_School_16x16_Basketball_Court_6.png" id="4_mbeb1"]
+[ext_resource type="Texture2D" uid="uid://uqa6sbdq258i" path="res://assets/sprites/interior/1_Generic_16x16.png" id="5_tmxpw"]
+[ext_resource type="Texture2D" uid="uid://cokvicr1sitgd" path="res://assets/sprites/interior/6_Music_and_sport_16x16.png" id="6_c27fe"]
+[ext_resource type="PackedScene" uid="uid://c2s4mm2a6qn3n" path="res://entities/player/player.tscn" id="7_ah6ra"]
+[ext_resource type="PackedScene" uid="uid://6l1vnpb2ds82" path="res://entities/npc/npc.tscn" id="8_ytwjb"]
+[ext_resource type="Resource" uid="uid://4mtftwrxuurf" path="res://dialog/help.dialogue" id="9_bv8rs"]
+[ext_resource type="Texture2D" uid="uid://btmahfb1yawtn" path="res://assets/sprites/characters/principal.png" id="10_h0gbr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3pxmr"]
-texture = ExtResource("2_6j0t5")
+texture = ExtResource("2_ainif")
 1:0/0 = 0
 2:0/0 = 0
 3:0/0 = 0
@@ -169,7 +169,7 @@ texture = ExtResource("2_6j0t5")
 15:9/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_34xvs"]
-texture = ExtResource("3_00j1h")
+texture = ExtResource("3_kegwp")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -315,7 +315,7 @@ texture = ExtResource("3_00j1h")
 10:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xo5o1"]
-texture = ExtResource("4_wsnwo")
+texture = ExtResource("4_mbeb1")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -478,7 +478,7 @@ sources/0 = SubResource("TileSetAtlasSource_3pxmr")
 sources/2 = SubResource("TileSetAtlasSource_xo5o1")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2xwpo"]
-texture = ExtResource("5_e46ok")
+texture = ExtResource("5_tmxpw")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1576,7 +1576,7 @@ texture = ExtResource("5_e46ok")
 10:75/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l8hqp"]
-texture = ExtResource("6_eofcb")
+texture = ExtResource("6_c27fe")
 4:0/0 = 0
 5:0/0 = 0
 6:0/0 = 0
@@ -2237,27 +2237,27 @@ sources/0 = SubResource("TileSetAtlasSource_2xwpo")
 sources/1 = SubResource("TileSetAtlasSource_l8hqp")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m03ym"]
-atlas = ExtResource("10_mrwy7")
+atlas = ExtResource("10_h0gbr")
 region = Rect2(288, 32, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2h2rd"]
-atlas = ExtResource("10_mrwy7")
+atlas = ExtResource("10_h0gbr")
 region = Rect2(304, 32, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rdbda"]
-atlas = ExtResource("10_mrwy7")
+atlas = ExtResource("10_h0gbr")
 region = Rect2(320, 32, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1eiju"]
-atlas = ExtResource("10_mrwy7")
+atlas = ExtResource("10_h0gbr")
 region = Rect2(336, 32, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_c6it8"]
-atlas = ExtResource("10_mrwy7")
+atlas = ExtResource("10_h0gbr")
 region = Rect2(352, 32, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_aun8y"]
-atlas = ExtResource("10_mrwy7")
+atlas = ExtResource("10_h0gbr")
 region = Rect2(368, 32, 16, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_i3nbt"]
@@ -2286,8 +2286,8 @@ animations = [{
 "speed": 6.0
 }]
 
-[node name="Basketball" type="Node2D"]
-script = ExtResource("1_s2rim")
+[node name="Tutorial" type="Node2D"]
+script = ExtResource("1_chcwh")
 
 [node name="Map" type="Node2D" parent="."]
 
@@ -2304,13 +2304,13 @@ tile_set = SubResource("TileSet_00sxi")
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(8, 8)
 
-[node name="Player" parent="." instance=ExtResource("7_wgc3v")]
+[node name="Player" parent="." instance=ExtResource("7_ah6ra")]
 unique_name_in_owner = true
 position = Vector2(-30, 3)
 
-[node name="Principal" parent="." instance=ExtResource("8_w8rww")]
+[node name="Principal" parent="." instance=ExtResource("8_ytwjb")]
 position = Vector2(0, -3)
-dialog = ExtResource("9_3ua3d")
+dialog = ExtResource("9_bv8rs")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Principal"]
 position = Vector2(-55, -15)
