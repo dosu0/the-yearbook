@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7f2uobcobjup"
-path="res://.godot/imported/ME_Singles_School_16x16_Basketball_Court_6.png-34499aa189cee0436bbd743c555f4655.ctex"
+uid="uid://ca5yuygl08q2g"
+path="res://.godot/imported/USC_Trojans_logo.svg.png-3cc1d021d4909ff87271662b2bfae3b8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/Basketball/ME_Singles_School_16x16_Basketball_Court_6.png"
-dest_files=["res://.godot/imported/ME_Singles_School_16x16_Basketball_Court_6.png-34499aa189cee0436bbd743c555f4655.ctex"]
+source_file="res://scenes/College Selection/USC_Trojans_logo.svg.png"
+dest_files=["res://.godot/imported/USC_Trojans_logo.svg.png-3cc1d021d4909ff87271662b2bfae3b8.ctex"]
 
 [params]
 

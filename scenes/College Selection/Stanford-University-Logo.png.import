@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7f2uobcobjup"
-path="res://.godot/imported/ME_Singles_School_16x16_Basketball_Court_6.png-34499aa189cee0436bbd743c555f4655.ctex"
+uid="uid://by34o7n4jeiyk"
+path="res://.godot/imported/Stanford-University-Logo.png-bd6cd985fa348a61b8ed5664f9c7d5e8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/Basketball/ME_Singles_School_16x16_Basketball_Court_6.png"
-dest_files=["res://.godot/imported/ME_Singles_School_16x16_Basketball_Court_6.png-34499aa189cee0436bbd743c555f4655.ctex"]
+source_file="res://scenes/College Selection/Stanford-University-Logo.png"
+dest_files=["res://.godot/imported/Stanford-University-Logo.png-bd6cd985fa348a61b8ed5664f9c7d5e8.ctex"]
 
 [params]
 

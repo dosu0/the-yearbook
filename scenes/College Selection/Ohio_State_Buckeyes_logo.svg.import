@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7f2uobcobjup"
-path="res://.godot/imported/ME_Singles_School_16x16_Basketball_Court_6.png-34499aa189cee0436bbd743c555f4655.ctex"
+uid="uid://cg06ar2ro3nwc"
+path="res://.godot/imported/Ohio_State_Buckeyes_logo.svg-28dc6a740233b3298f7897acea9c384d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/Basketball/ME_Singles_School_16x16_Basketball_Court_6.png"
-dest_files=["res://.godot/imported/ME_Singles_School_16x16_Basketball_Court_6.png-34499aa189cee0436bbd743c555f4655.ctex"]
+source_file="res://scenes/College Selection/Ohio_State_Buckeyes_logo.svg"
+dest_files=["res://.godot/imported/Ohio_State_Buckeyes_logo.svg-28dc6a740233b3298f7897acea9c384d.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false
