@@ -1,18 +1,42 @@
 extends Node
+
+@onready var health_bar: ProgressBar = %HealthBar
 @onready var academics_bar: ProgressBar = %AcademicsBar
+@onready var social_bar: ProgressBar = %SocialBar
+@onready var mental_bar: ProgressBar = %MentalBar
+@onready var money_bar: ProgressBar = %MoneyBar
 @onready var stats: VBoxContainer = $HUD/Stats
 
-var health: int
-		
+var health: int:
+	set(new_health):
+		health = new_health
+		health_bar.value = health
+	get():
+		return health	
 var academics: int:
 	set(new_academics):
 		academics = new_academics
 		academics_bar.value = academics
 	get():
 		return academics
-var social: int
-var mental: int 
-var money: int
+var social: int:
+	set(new_social):
+		social = new_social
+		social_bar.value = social
+	get():
+		return social
+var mental: int:
+	set(new_mental):
+		mental = new_mental
+		mental_bar.value = mental
+	get():
+		return mental
+var money: int:
+	set(new_money):
+		money = new_money
+		money_bar.value = money
+	get():
+		return money
 
 var is_playing: bool:
 	set(is_playing_now):

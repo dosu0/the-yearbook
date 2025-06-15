@@ -6709,7 +6709,7 @@ animations = [{
 "speed": 6.0
 }]
 
-[node name="music_inigame" type="Node2D"]
+[node name="MusicMinigame" type="Node2D"]
 script = ExtResource("1_jq5cd")
 
 [node name="Map" type="Node2D" parent="."]
