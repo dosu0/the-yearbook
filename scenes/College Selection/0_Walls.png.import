@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7f2uobcobjup"
-path="res://.godot/imported/ME_Singles_School_16x16_Basketball_Court_6.png-34499aa189cee0436bbd743c555f4655.ctex"
+uid="uid://s22nmpkiamum"
+path="res://.godot/imported/0_Walls.png-eb9d015fc34f8c039a245c2b20d06629.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/Basketball/ME_Singles_School_16x16_Basketball_Court_6.png"
-dest_files=["res://.godot/imported/ME_Singles_School_16x16_Basketball_Court_6.png-34499aa189cee0436bbd743c555f4655.ctex"]
+source_file="res://scenes/College Selection/0_Walls.png"
+dest_files=["res://.godot/imported/0_Walls.png-eb9d015fc34f8c039a245c2b20d06629.ctex"]
 
 [params]
 
